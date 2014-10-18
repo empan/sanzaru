@@ -145,7 +145,11 @@ void hearGameSetup(){
  hearDialogueStrings[53] = "I wonder what it means?";  hTextX[53]=215; hTextY[53]=305; hearChar[53] = loadImage("assignment05/char05a.png");
  
  //at the jungle
- drx[54]=270; dry[54]=220; drw[54]=0; drh[54]=0; drwRate[54]=22; drhRate[54]=13; playerOptions[54] = true; hTransition[54] = true;
- hearDialogueStrings[54] = "";  hTextX[54]=181; hTextY[54]=225; hearChar[54] = loadImage("assignment05/char05.png");
+ drx[54]=240; dry[54]=220; drw[54]=120; drh[54]=65; drwRate[54]=22; drhRate[54]=13; playerOptions[54] = false; hTransition[54] = true;
+ hearDialogueStrings[54] = "I didn't do it!";  hTextX[54]=181; hTextY[54]=225; hearChar[54] = loadImage("assignment05/char05.png");
+ drx[55]=270; dry[55]=220; drw[55]=130; drh[55]=65; drwRate[55]=22; drhRate[55]=13; playerOptions[55] = false; hTransition[55] = true;
+ hearDialogueStrings[55] = "ads";  hTextX[55]=181; hTextY[55]=225; hearChar[55] = loadImage("assignment05/char05.png");
+ drx[56]=270; dry[56]=220; drw[56]=130; drh[56]=65; drwRate[56]=22; drhRate[56]=13; playerOptions[56] = false; hTransition[56] = true;
+ hearDialogueStrings[56] = "lkjsafd";  hTextX[56]=181; hTextY[56]=225; hearChar[56] = loadImage("assignment05/char05.png");
  
 }

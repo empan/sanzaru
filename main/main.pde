@@ -12,7 +12,7 @@ PImage[] titleIconImg = new PImage[3];
 PImage[] soundIconImg = new PImage[2];
 PImage rarrowImg, larrowImg;
 
-String state = "title"; //title, hearGame, seeGame, speakGame, blackOut
+String state = "hearGame"; //title, hearGame, seeGame, speakGame, blackOut
 String nextState = "title";
 String levelSelect = "hear";
 
@@ -53,7 +53,7 @@ DialogueRect myDialogueRect;
 OptionBoxes myOptionBoxes;
 hInventoryItem[] myhInventoryItem = new hInventoryItem[10];
 
-String hearGameState = "start"; //start, play, inventory
+String hearGameState = "play"; //start, play, inventory
 String[] hearDialogueStrings = new String[200];
 String[] opS1 = new String[200]; String[] opS2 = new String[200];
 
@@ -210,7 +210,7 @@ void setup(){
 }
 
 void draw(){
-  //cdInt=53;
+  cdInt=54;
   //miruInt=5;
   //println(cdInt);
   textSize(14);

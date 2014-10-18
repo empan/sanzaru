@@ -27,7 +27,7 @@ class OptionBoxes{
       else if (arrowTest == 0) { xPosArrow -= .3;} //move arrows
       
       if(opSelect == 0){ triangle(xPosArrow,y-10, xPosArrow,y, xPosArrow+10,y-5); }
-      else if(opSelect == 1 || (cdInt==43 && opSelect == -2)){ triangle(xPosArrow,y+10, xPosArrow,y+20, xPosArrow+10,y+15); }
+      else if(opSelect != 0){ triangle(xPosArrow,y+10, xPosArrow,y+20, xPosArrow+10,y+15); }
       
       text(o1, x,y);
       text(o2, x,y+20);

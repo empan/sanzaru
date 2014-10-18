@@ -50,8 +50,9 @@ void hearGame(){
     if(cdInt == 51){ hDialogueDone[0] = true; } //got the bully's note from flora
     
     //jungle
-    else if(cdInt == 60){ image(hbgImg[11],0,0); }
-    if(cdInt == 63 && opSelect == 1){ opSelect = -2; }
+    else if(cdInt >= 54){ image(hbgImg[11],0,0); }
+    if(cdInt == 42 && opSelect == 1){ opSelect = 11; }
+    if(cdInt == 44 && opSelect == 1){ opSelect = -2; }
     
     
     myDialogueRect.display(drx[cdInt],dry[cdInt],drw[cdInt],drh[cdInt],drwRate[cdInt],drhRate[cdInt]);
