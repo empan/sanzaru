@@ -51,7 +51,8 @@ void hearGame(){
     
     //jungle
     else if(cdInt >= 54){ image(hbgImg[11],0,0); }
-    if(cdInt == 42 && opSelect == 1){ opSelect = 11; }
+    if(cdInt == 42 && opSelect == 1){ opSelect = 11; } //go to jungle from scenario select
+    if(cdInt == 56 && opSelect == 1){ opSelect = 5; } //"About Gracie..." skip dialogue
     if(cdInt == 44 && opSelect == 1){ opSelect = -2; }
     
     

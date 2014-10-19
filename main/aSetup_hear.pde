@@ -145,11 +145,43 @@ void hearGameSetup(){
  hearDialogueStrings[53] = "I wonder what it means?";  hTextX[53]=215; hTextY[53]=305; hearChar[53] = loadImage("assignment05/char05a.png");
  
  //at the jungle
- drx[54]=240; dry[54]=220; drw[54]=120; drh[54]=65; drwRate[54]=22; drhRate[54]=13; playerOptions[54] = false; hTransition[54] = true;
+ drx[54]=223; dry[54]=220; drw[54]=120; drh[54]=65; drwRate[54]=22; drhRate[54]=13; playerOptions[54] = false; hTransition[54] = true;
  hearDialogueStrings[54] = "I didn't do it!";  hTextX[54]=181; hTextY[54]=225; hearChar[54] = loadImage("assignment05/char05.png");
- drx[55]=270; dry[55]=220; drw[55]=130; drh[55]=65; drwRate[55]=22; drhRate[55]=13; playerOptions[55] = false; hTransition[55] = true;
- hearDialogueStrings[55] = "ads";  hTextX[55]=181; hTextY[55]=225; hearChar[55] = loadImage("assignment05/char05.png");
- drx[56]=270; dry[56]=220; drw[56]=130; drh[56]=65; drwRate[56]=22; drhRate[56]=13; playerOptions[56] = false; hTransition[56] = true;
- hearDialogueStrings[56] = "lkjsafd";  hTextX[56]=181; hTextY[56]=225; hearChar[56] = loadImage("assignment05/char05.png");
+ drx[55]=270; dry[55]=220; drw[55]=0; drh[55]=0; drwRate[55]=22; drhRate[55]=13; playerOptions[55] = true; hTransition[55] = false;
+ hearDialogueStrings[55] = "";  hTextX[55]=0; hTextY[55]=0; hearChar[55] = loadImage("assignment05/char05.png");
+ opx[55]=400; opy[55]=300; opw[55]=145; oph[55]=75; opwRate[55]=16; ophRate[55]=13; opS1[55]="Talk to Dorian"; opS2[55]="Get outta here"; 
+ drx[56]=270; dry[56]=220; drw[56]=0; drh[56]=0; drwRate[56]=22; drhRate[56]=13; playerOptions[56] = true; hTransition[56] = false;
+ hearDialogueStrings[56] = "";  hTextX[56]=181; hTextY[56]=225; hearChar[56] = loadImage("assignment05/char05.png"); 
+ opx[56]=400; opy[56]=300; opw[56]=225; oph[56]=75; opwRate[56]=16; ophRate[56]=13; opS1[56]="What happened last night?"; opS2[56]="About Gracie..."; 
+ drx[57]=300; dry[57]=220; drw[57]=260; drh[57]=65; drwRate[57]=22; drhRate[57]=13; playerOptions[57] = false; hTransition[57] = false;
+ hearDialogueStrings[57] = "I was hanging around the jungle...";  hTextX[57]=181; hTextY[57]=225; hearChar[57] = loadImage("assignment05/char05.png");
+ drx[58]=305; dry[58]=220; drw[58]=280; drh[58]=65; drwRate[58]=22; drhRate[58]=13; playerOptions[58] = false; hTransition[58] = false;
+ hearDialogueStrings[58] = "...and then those bullies showed up.";  hTextX[58]=181; hTextY[58]=225; hearChar[58] = loadImage("assignment05/char05.png");
+ drx[59]=270; dry[59]=220; drw[59]=130; drh[59]=65; drwRate[59]=22; drhRate[59]=13; playerOptions[59] = false; hTransition[59] = false;
+ hearDialogueStrings[59] = "I swear I wasn't doing anything though!";  hTextX[59]=181; hTextY[59]=225; hearChar[59] = loadImage("assignment05/char05.png");
+ drx[59]=273; dry[59]=220; drw[59]=225; drh[59]=65; drwRate[59]=22; drhRate[59]=13; playerOptions[59] = false; hTransition[59] = false;
+ hearDialogueStrings[59] = "Just...looking for more rocks.";  hTextX[59]=181; hTextY[59]=225; hearChar[59] = loadImage("assignment05/char05.png");
+ drx[60]=304; dry[60]=220; drw[60]=240; drh[60]=65; drwRate[60]=22; drhRate[60]=13; playerOptions[60] = false; hTransition[60] = false;
+ hearDialogueStrings[60] = "Yeah, she doesn't like me very much.";  hTextX[60]=181; hTextY[60]=225; hearChar[60] = loadImage("assignment05/char05.png");
+ drx[61]=337; dry[61]=220; drw[61]=335; drh[61]=65; drwRate[61]=22; drhRate[61]=13; playerOptions[61] = false; hTransition[61] = false; 
+ hearDialogueStrings[61] = "I accidentally stepped on her cat's tail last year.";  hTextX[61]=181; hTextY[61]=225; hearChar[61] = loadImage("assignment05/char05.png");
+ drx[62]=245; dry[62]=220; drw[62]=160; drh[62]=65; drwRate[62]=22; drhRate[62]=13; playerOptions[62] = false; hTransition[62] = false; hSkip[62] = -8;
+ hearDialogueStrings[62] = "That lady is crazy!";  hTextX[62]=181; hTextY[62]=225; hearChar[62] = loadImage("assignment05/char05.png");
+ drx[63]=270; dry[63]=220; drw[63]=130; drh[63]=65; drwRate[63]=22; drhRate[63]=13; playerOptions[63] = false; hTransition[63] = false;
+ hearDialogueStrings[63] = "How did you get that?!";  hTextX[63]=181; hTextY[63]=225; hearChar[63] = loadImage("assignment05/char05.png");
+ drx[64]=270; dry[64]=220; drw[64]=130; drh[64]=65; drwRate[64]=22; drhRate[64]=13; playerOptions[64] = false; hTransition[64] = false; hSkip[64] = -10;
+ hearDialogueStrings[64] = "I use the rocks to scare the crows off.";  hTextX[64]=181; hTextY[64]=225; hearChar[64] = loadImage("assignment05/char05.png");
+ drx[65]=270; dry[65]=220; drw[65]=130; drh[65]=65; drwRate[65]=22; drhRate[65]=13; playerOptions[65] = false; hTransition[65] = false;
+ hearDialogueStrings[65] = "lkjsafd";  hTextX[65]=181; hTextY[65]=225; hearChar[65] = loadImage("assignment05/char05.png");
+ drx[66]=270; dry[66]=220; drw[66]=130; drh[66]=65; drwRate[66]=22; drhRate[66]=13; playerOptions[66] = false; hTransition[66] = false;
+ hearDialogueStrings[66] = "lkjsafd";  hTextX[66]=181; hTextY[66]=225; hearChar[66] = loadImage("assignment05/char05.png");
+ drx[67]=270; dry[67]=220; drw[67]=130; drh[67]=65; drwRate[67]=22; drhRate[67]=13; playerOptions[67] = false; hTransition[67] = false;
+ hearDialogueStrings[67] = "lkjsafd";  hTextX[67]=181; hTextY[67]=225; hearChar[67] = loadImage("assignment05/char05.png");
+ drx[68]=270; dry[68]=220; drw[68]=130; drh[68]=65; drwRate[68]=22; drhRate[68]=13; playerOptions[68] = false; hTransition[68] = false;
+ hearDialogueStrings[68] = "lkjsafd";  hTextX[68]=181; hTextY[68]=225; hearChar[68] = loadImage("assignment05/char05.png");
+ drx[69]=270; dry[69]=220; drw[69]=130; drh[69]=65; drwRate[69]=22; drhRate[69]=13; playerOptions[69] = false; hTransition[69] = false;
+ hearDialogueStrings[69] = "lkjsafd";  hTextX[69]=181; hTextY[69]=225; hearChar[69] = loadImage("assignment05/char05.png");
+ drx[70]=270; dry[70]=220; drw[70]=130; drh[70]=65; drwRate[70]=22; drhRate[70]=13; playerOptions[70] = false; hTransition[70] = false;
+ hearDialogueStrings[70] = "lkjsafd";  hTextX[70]=181; hTextY[70]=225; hearChar[70] = loadImage("assignment05/char05.png");
  
 }
