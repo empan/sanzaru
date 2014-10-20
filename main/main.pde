@@ -210,7 +210,7 @@ void setup(){
 }
 
 void draw(){
-  cdInt=62;
+  //cdInt=59;
   //miruInt=5;
   //println(cdInt);
   textSize(14);
@@ -314,9 +314,11 @@ void keyPressed(){
       }
       if( hearGameState=="inventory"){
         if( cdInt == 31 ){ screenOpacity=0; screenTransition(); cdInt++; hearGameState="play"; } //show rock to mayor
-        if( cdInt >= 43 && cdInt < 46 && hDialogueDone[0] == false && hInventSelect%10 == 0 ){ cdInt = 46; opSelect = 0; hearGameState="play"; } //show rock to flora, bully note dialogue
+        if( cdInt >= 43 && cdInt < 46 && hDialogueDone[0] == false && hInventSelect%10 == 0 ){ cdInt = 46; opSelect = 0; hearGameState="play"; } //show rock to flora, bully note dialogue [0]
         else if( cdInt >= 43 && cdInt < 46 && hDialogueDone[0] == true && hInventSelect%10 == 0 ){ cdInt = 52; opSelect = 0; hearGameState="play"; } //after bully note, rock shown to flora
         else if( cdInt >= 43 && cdInt < 46 && hDialogueDone[0] == true && hInventSelect%10 == 1){ cdInt = 53; opSelect = 0; hearGameState="play"; } //after bully note, note shown to flora
+        else if( cdInt >= 54 && cdInt < 63 && hInventSelect%10 == 0){ cdInt = 64; opSelect = 0; hearGameState="play"; } //at jungle, rock shown to dorian
+        else if( cdInt >= 54 && cdInt < 63 && hDialogueDone[0] == true && hInventSelect%10 == 1){ cdInt = 66; opSelect = 0; hearGameState="play"; } //at jungle, note shown dorian
       }
     }
     if(key == 'x' || key =='X' ){
