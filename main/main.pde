@@ -210,7 +210,7 @@ void setup(){
 }
 
 void draw(){
-  //cdInt=59;
+  //cdInt=65;
   //miruInt=5;
   //println(cdInt);
   textSize(14);

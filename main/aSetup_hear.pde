@@ -167,11 +167,11 @@ void hearGameSetup(){
  hearDialogueStrings[62] = "I accidentally stepped on her cat's tail last year.";  hTextX[62]=181; hTextY[62]=225; hearChar[62] = loadImage("assignment05/char05.png");
  drx[63]=245; dry[63]=220; drw[63]=160; drh[63]=65; drwRate[63]=22; drhRate[63]=13; playerOptions[63] = false; hTransition[63] = false; hSkip[63] = -9;
  hearDialogueStrings[63] = "That lady is crazy!";  hTextX[63]=181; hTextY[63]=225; hearChar[63] = loadImage("assignment05/char05.png");
- drx[64]=270; dry[64]=220; drw[64]=130; drh[64]=65; drwRate[64]=22; drhRate[64]=13; playerOptions[64] = false; hTransition[64] = false;
+ drx[64]=255; dry[64]=220; drw[64]=190; drh[64]=65; drwRate[64]=22; drhRate[64]=13; playerOptions[64] = false; hTransition[64] = false;
  hearDialogueStrings[64] = "How did you get that?!";  hTextX[64]=181; hTextY[64]=225; hearChar[64] = loadImage("assignment05/char05.png");
- drx[65]=270; dry[65]=220; drw[65]=130; drh[65]=65; drwRate[65]=22; drhRate[65]=13; playerOptions[65] = false; hTransition[65] = false; hSkip[65] = -11;
- hearDialogueStrings[65] = "I use the rocks to scare the crows off.";  hTextX[65]=181; hTextY[65]=225; hearChar[65] = loadImage("assignment05/char05.png");
- drx[66]=270; dry[66]=220; drw[66]=130; drh[66]=65; drwRate[66]=22; drhRate[66]=13; playerOptions[66] = false; hTransition[66] = false;
+ drx[65]=310; dry[65]=220; drw[65]=290; drh[65]=65; drwRate[65]=22; drhRate[65]=13; playerOptions[65] = false; hTransition[65] = false; hSkip[65] = -11;
+ hearDialogueStrings[65] = "I use the rocks to scare off the crows.";  hTextX[65]=181; hTextY[65]=225; hearChar[65] = loadImage("assignment05/char05.png");
+ drx[66]=235; dry[66]=220; drw[66]=160; drh[66]=65; drwRate[66]=22; drhRate[66]=13; playerOptions[66] = false; hTransition[66] = false;
  hearDialogueStrings[66] = "What is that?";  hTextX[66]=181; hTextY[66]=225; hearChar[66] = loadImage("assignment05/char05.png"); hSkip[66] = -12;
  drx[67]=270; dry[67]=220; drw[67]=130; drh[67]=65; drwRate[67]=22; drhRate[67]=13; playerOptions[67] = false; hTransition[67] = false;
  hearDialogueStrings[67] = "lkjsafd";  hTextX[67]=181; hTextY[67]=225; hearChar[67] = loadImage("assignment05/char05.png");
