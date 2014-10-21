@@ -25,7 +25,9 @@ void hearGame(){
   /* STATE == PLAY */
   /*****************/
   else if( hearGameState == "play") {  
-    hearAudio[3].play();
+    if(cdInt < 43){ hearAudio[3].play(); hearAudio[4].pause(); }
+    else if(cdInt < 54){ hearAudio[5].play(); hearAudio[3].pause(); hearAudio[4].pause(); }
+    else{ hearAudio[3].pause(); hearAudio[4].play(); hearAudio[5].pause(); }
       
     //cut scene
     if(cdInt >= 17 && cdInt < 22){

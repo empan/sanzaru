@@ -5,7 +5,7 @@ import ddf.minim.*;
 Minim minim;
 AudioPlayer[] titleAudio = new AudioPlayer[3]; 
 AudioPlayer[] dialogueAudio = new AudioPlayer[5];
-AudioPlayer[] hearAudio = new AudioPlayer[4];
+AudioPlayer[] hearAudio = new AudioPlayer[6];
 
 PImage titlebgImg, titleEnterImg, blackBGImg;
 PImage[] titleIconImg = new PImage[3];
@@ -311,6 +311,8 @@ void keyPressed(){
         arrowFrame = 0;
         myDialogueRect.rectWidth = 0;
         myDialogueRect.rectHeight = 0;
+        if(cdInt >= 43 ){ for(int i=3; i<5; i++){ hearAudio[i].rewind(); } }
+        else if(cdInt == 54 ){ hearAudio[3].rewind(); }
       }
       if( hearGameState=="inventory"){
         if( cdInt == 31 ){ screenOpacity=0; screenTransition(); cdInt++; hearGameState="play"; } //show rock to mayor
@@ -329,7 +331,7 @@ void keyPressed(){
     }
     if(key == ENTER || key == RETURN){
       hInventSelect = 0;
-      hearAudio[3].pause();hearAudio[3].rewind();
+      for(int i=3; i<6; i++){ hearAudio[i].pause();hearAudio[i].rewind(); }
       hearAudio[2].rewind(); hearAudio[2].play();
       screenOpacity=0; screenTransition(); hearGameState="inventory";
     }

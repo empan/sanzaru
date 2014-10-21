@@ -9,7 +9,8 @@ void hearGameSetup(){
  hearAudio[1] = minim.loadFile("assignment05/sound/inventoryClose.mp3"); hearAudio[1].setGain(-20);
  hearAudio[2] = minim.loadFile("assignment05/sound/inventoryOpen.mp3"); hearAudio[2].setGain(-20);
  hearAudio[3] = minim.loadFile("assignment05/sound/hearBGexport.mp3"); hearAudio[2].setGain(-10);
- hearAudio[3].loop(); hearAudio[3].pause();
+ hearAudio[4] = minim.loadFile("assignment05/sound/Chris_Zabriskie_-_02_-_Readers_Do_You_Read.mp3");
+ hearAudio[5] = minim.loadFile("assignment05/sound/Ergo_Phizmiz_-_02_-_A_Favourite_Place.mp3");
  
  inventImgArr[0] = loadImage("assignment05/inventory_none.png");
  inventImgArr[1] = loadImage("assignment05/inventory_rock.png");
