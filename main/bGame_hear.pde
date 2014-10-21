@@ -50,12 +50,20 @@ void hearGame(){
     else if(cdInt >= 43){ image(mbgImg[18],0,0); }
     if(cdInt == 43 && opSelect == 1){ opSelect = -2; } //leave shop area after talking to flora
     if(cdInt == 51){ hDialogueDone[0] = true; } //got the bully's note from flora
+    if(cdInt == 66){ hDialogueDone[1] = true; } //showed note to dorian
+    if(cdInt == 64){ hDialogueDone[2] = true; image(hbgImg[11],0,0);} //showed rock to dorian
     
     //jungle
     else if(cdInt >= 54){ image(hbgImg[11],0,0); }
     if(cdInt == 42 && opSelect == 1){ opSelect = 11; } //go to jungle from scene select
     if(cdInt == 56 && opSelect == 1){ opSelect = 5; } //"About Gracie..." skip dialogue
-    if(cdInt == 55 && opSelect == 1){ opSelect = -14; } //at jungle, go back to scene select
+    if(cdInt == 55 && opSelect == 1){ 
+      if(hDialogueDone[1] == true && hDialogueDone[2] == true){ opSelect = 11; } //if rock+note shown to dorian, proceed to bully scene
+      else{ opSelect = -14; } //at jungle, go back to scene select
+    }
+    
+    //bully scene
+    else if(cdInt >=67){ image(hbgImg[9],0,0); }
     
     
     myDialogueRect.display(drx[cdInt],dry[cdInt],drw[cdInt],drh[cdInt],drwRate[cdInt],drhRate[cdInt]);
