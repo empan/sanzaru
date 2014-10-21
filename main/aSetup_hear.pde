@@ -174,6 +174,8 @@ void hearGameSetup(){
  hearDialogueStrings[65] = "I use the rocks to scare off the crows.";  hTextX[65]=181; hTextY[65]=225; hearChar[65] = loadImage("assignment05/char06.png");
  drx[66]=235; dry[66]=220; drw[66]=160; drh[66]=65; drwRate[66]=22; drhRate[66]=13; playerOptions[66] = false; hTransition[66] = false;
  hearDialogueStrings[66] = "What is that?";  hTextX[66]=181; hTextY[66]=225; hearChar[66] = loadImage("assignment05/char06.png"); hSkip[66] = -12;
+ 
+ 
  drx[67]=270; dry[67]=220; drw[67]=130; drh[67]=65; drwRate[67]=22; drhRate[67]=13; playerOptions[67] = false; hTransition[67] = false;
  hearDialogueStrings[67] = "lkjsafd";  hTextX[67]=181; hTextY[67]=225; hearChar[67] = loadImage("assignment05/char06.png");
  drx[68]=270; dry[68]=220; drw[68]=130; drh[68]=65; drwRate[68]=22; drhRate[68]=13; playerOptions[68] = false; hTransition[68] = false;

@@ -311,7 +311,7 @@ void keyPressed(){
         arrowFrame = 0;
         myDialogueRect.rectWidth = 0;
         myDialogueRect.rectHeight = 0;
-        if(cdInt >= 43 ){ for(int i=3; i<5; i++){ hearAudio[i].rewind(); } }
+        if(cdInt == 43 ){ for(int i=3; i<5; i++){ hearAudio[i].rewind(); } }
         else if(cdInt == 54 ){ hearAudio[3].rewind(); }
       }
       if( hearGameState=="inventory"){
