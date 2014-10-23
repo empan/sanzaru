@@ -5,9 +5,11 @@ Sound:
 Chris Zabriskie via FMA
 Kai Engel via FMA
 
-BG based on:
-(Hear Village)
-http://theircvillage.com/wp-content/uploads/2014/04/green_village.jpg
-(Inventory BG)
+Inventory BG Pattern:
 http://subtlepatterns.com/
+
+BG Reference:
+http://theircvillage.com/wp-content/uploads/2014/04/green_village.jpg
 http://www.cruisereviews.com/images/ports/europeportreviews/MonteCarloPics/MonacoShoppingStreet.jpg
+
+Art by me.
