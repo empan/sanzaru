@@ -178,11 +178,11 @@ void hearGameSetup(){
  //bullies
  drx[67]=400; dry[67]=300; drw[67]=190; drh[67]=65; drwRate[67]=22; drhRate[67]=13; playerOptions[67] = false; hTransition[67] = true;
  hearDialogueStrings[67] = "Who are you??";  hTextX[67]=357; hTextY[67]=305; hearChar[67] = loadImage("assignment05/blackBG2.png");
- drx[68]=270; dry[68]=220; drw[68]=130; drh[68]=65; drwRate[68]=22; drhRate[68]=13; playerOptions[68] = false; hTransition[68] = true;
- hearDialogueStrings[68] = "lkjsafd";  hTextX[68]=181; hTextY[68]=225; hearChar[68] = loadImage("assignment05/char06.png");
- drx[69]=270; dry[69]=220; drw[69]=130; drh[69]=65; drwRate[69]=22; drhRate[69]=13; playerOptions[69] = false; hTransition[69] = false;
- hearDialogueStrings[69] = "lkjsafd";  hTextX[69]=181; hTextY[69]=225; hearChar[69] = loadImage("assignment05/char06.png");
+ drx[68]=310; dry[68]=220; drw[68]=150; drh[68]=65; drwRate[68]=22; drhRate[68]=13; playerOptions[68] = false; hTransition[68] = true;
+ hearDialogueStrings[68] = "I'm tired, bro.";  hTextX[68]=263; hTextY[68]=225; hearChar[68] = loadImage("assignment05/char07.png");
+ drx[69]=320; dry[69]=220; drw[69]=250; drh[69]=65; drwRate[69]=22; drhRate[69]=13; playerOptions[69] = false; hTransition[69] = false;
+ hearDialogueStrings[69] = "I don't really feel like talking.";  hTextX[69]=221; hTextY[69]=225; hearChar[69] = loadImage("assignment05/char07.png");
  drx[70]=270; dry[70]=220; drw[70]=130; drh[70]=65; drwRate[70]=22; drhRate[70]=13; playerOptions[70] = false; hTransition[70] = false;
- hearDialogueStrings[70] = "lkjsafd";  hTextX[70]=181; hTextY[70]=225; hearChar[70] = loadImage("assignment05/char06.png");
+ hearDialogueStrings[70] = "lkjsafd";  hTextX[70]=181; hTextY[70]=225; hearChar[70] = loadImage("assignment05/char07.png");
  
 }

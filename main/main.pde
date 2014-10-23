@@ -91,6 +91,7 @@ PImage[] sbgImg = new PImage[100];
 /***********************************************************************************************************************************************************/
 /* SUPPORTING FUNCTIONS
 /***********************************************************************************************************************************************************/
+//Black out the screen - for Title
 void blackOut(){
   blackCount++;
   if (blackOpacity > 255) { blackOpacityTest = 0;  } //test if opacity needs to go down
@@ -102,11 +103,13 @@ void blackOut(){
   if(blackCount%50 == 0) { screenOpacity = 0; state = nextState; blackOpacity = 0; }
 }
 
+//Fade out
 void screenTransition(){
   tint(255,screenOpacity);
   screenOpacity+=5;
 }
 
+//Sound icon at top right
 void soundIconFn(){
   if(soundOn == 1){ 
     image(soundIconImg[1], 715,25);
@@ -120,6 +123,7 @@ void soundIconFn(){
   }
 }
 
+//Inventory selection
 void hInventSelectFn(int x, int y){
   if(inventFrame % 70 >= 0 && inventFrame % 70 < 35){ image(hbgImg[6],x,y); }
   else{ image(hbgImg[7],x,y); }
@@ -137,7 +141,7 @@ void theTitle(){
   hearAudio[3].mute();
   imageMode(CENTER);
   
-  /* PRESS ENTER */
+  /* PRESS ENTER ANIMATION */
   if (titleEnterOpacity > 255) { titleEnterOpacityTest = 0;  } //test if opacity needs to go down
   else if (titleEnterOpacity < 100) { titleEnterOpacityTest = 1; } //test if opacity needs to go up
   if (titleEnterOpacityTest == 1) { titleEnterOpacity += 5; } //increase opacity
@@ -146,7 +150,7 @@ void theTitle(){
   image(titleEnterImg, width/2, 465);
   tint(255,255);
   
-  /* ARROWS */
+  /* ARROWS ANIMATION */
   tint(255,255);
   if (xPosRArrow > 579) { arrowTest = 0;  } //test if arrow needs to go in
   else if (xPosRArrow < 575) { arrowTest = 1; } //test if arrow needs to go out
@@ -210,7 +214,8 @@ void setup(){
 }
 
 void draw(){
-  //cdInt=67;
+  //UNCOMMENT TO DEBUG//
+  //cdInt=69;
   //miruInt=5;
   //println(cdInt);
   textSize(14);
@@ -225,25 +230,25 @@ void draw(){
 }
 
 void keyPressed(){  
-  if(key == '0'){ screenOpacity=0; screenOpacity++; state = "title"; titleAudio[0].rewind(); }
-  if(key == 'm' || key == 'M'){ soundOn *= -1; }
+  if(key == '0'){ screenOpacity=0; screenOpacity++; state = "title"; titleAudio[0].rewind(); } //reset to title screen
+  if(key == 'm' || key == 'M'){ soundOn *= -1; } //mute or unmute
   
   if(state == "title"){
     if(key == CODED){
-      if(keyCode == LEFT){
+      if(keyCode == LEFT){ //switch between selected level
         titleAudio[1].rewind(); titleAudio[1].play(); 
         if(levelSelect == "see"){ levelSelect = "speak"; }
         else if(levelSelect == "hear"){ levelSelect = "see"; }
         else if(levelSelect == "speak"){ levelSelect = "hear"; }
       }
-      if(keyCode == RIGHT){
+      if(keyCode == RIGHT){ //switch between selected level
         titleAudio[1].rewind(); titleAudio[1].play();
         if(levelSelect == "see"){ levelSelect = "hear"; }
         else if(levelSelect == "hear"){ levelSelect = "speak"; }
         else if(levelSelect == "speak"){ levelSelect = "see"; }
       }
     }
-    if( (key == ENTER || key == RETURN) ){ 
+    if( (key == ENTER || key == RETURN) ){  //select a level
       titleAudio[2].rewind(); titleAudio[2].play();
       titleAudio[0].pause();
       if(levelSelect == "see"){ nextState = "seeGame"; }
@@ -324,6 +329,9 @@ void keyPressed(){
       }
     }
     if(key == 'x' || key =='X' ){
+      if( hearGameState=="play"){
+        if(cdInt==56){ cdInt = 55; }
+      }
       if( hearGameState=="inventory"){ 
         hearAudio[1].rewind(); hearAudio[1].play();
         hearGameState = "play";  
